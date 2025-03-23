@@ -1,0 +1,133 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Volleyball 5-1 Rotation system</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="src/js/snap.svg-min.js"></script>
+  <script src="src/js/vbCourts.js"></script>
+  <script src="src/js/vbPositionsAndRotations.js"></script>
+  <script type="text/javascript">
+      let vbTutorialDiv
+
+      function clean(elem) {
+          while (elem.firstChild) {
+              elem.removeChild(elem.firstChild)
+          }
+      }
+
+      function createVBTutorial() {
+          clean(vbTutorialDiv)
+
+          const vbTutorial = new VBPositionsAndRotation({
+              playersImg: {
+                  s: getPlayerImage('s'),
+                  h1: getPlayerImage('h1'),
+                  m1: getPlayerImage('m1'),
+                  o: getPlayerImage('o'),
+                  h2: getPlayerImage('h2'),
+                  m2: getPlayerImage('m2'),
+                  l: getPlayerImage('l'),
+
+              },
+              language: 'it',
+              width: 800
+          })
+          vbTutorialDiv.appendChild(vbTutorial.getSVG())
+          vbTutorial.draw()
+      }
+
+      function getPlayerImage(role) {
+          let value = document.getElementById("players_" + role).value;
+          if (value !== "")
+              return "img/" + value + ".png"
+          else
+              return null
+      }
+
+      function reRender() {
+          vbTutorialDiv = document.getElementById('vbTutorialDiv')
+          createVBTutorial()
+      }
+
+      function populatePlayers(role) {
+          let select = document.getElementById('players_' + role)
+          select.innerHTML =
+              '<option value="" selected="selected"></option>' +
+              '<option value="andrea">Andrea</option>' +
+              '<option value="arianna">Arianna</option>' +
+              '<option value="donato">Donato</option>' +
+              '<option value="giovanni">Giovanni</option>' +
+              '<option value="luca">Luca</option>' +
+              '<option value="miguel">Miguel</option>' +
+              '<option value="reby">Reby</option>'+
+              '<option value="ricky">Ricky</option>' +
+              '<option value="sveva">Sveva</option>'
+      }
+
+      window.onload = () => {
+          populatePlayers('s')
+          populatePlayers('h1')
+          populatePlayers('m1')
+          populatePlayers('o')
+          populatePlayers('h2')
+          populatePlayers('m2')
+          populatePlayers('l')
+          reRender()
+      }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <h1 id="titleH">Rotazioni GAME OVER Edition</h1>
+</header>
+
+<div id="players">
+
+  <span>P:</span>
+  <select id="players_s" onchange="reRender()">
+  </select>
+
+  <span>S1:</span>
+  <select id="players_h1" onchange="reRender()">
+  </select>
+
+  <span>C1:</span>
+  <select id="players_m1" onchange="reRender()">
+  </select>
+
+  <span>O:</span>
+  <select id="players_o" onchange="reRender()">
+  </select>
+
+  <span>S2:</span>
+  <select id="players_h2" onchange="reRender()">
+  </select>
+
+  <span>C2:</span>
+  <select id="players_m2" onchange="reRender()">
+  </select>
+
+  <span>L:</span>
+  <select id="players_l" onchange="reRender()">
+  </select>
+
+</div>
+
+<section class="vbrotations">
+  <div class="container" id="vbTutorialDiv"></div>
+</section>
+
+
+<section class="notes">
+  <div class="container">
+    <p id="descriptionP">Il diagramma interattivo (sopra) indica il tipico sistema di rotazione 5-1 usato nella
+      pallavolo. Puoi riprodurre il tutorial per vedere come funziona il diagramma.</p>
+  </div>
+</section>
+<footer class="footer">
+  <p>Created using <a href="https://github.com/monkeysppp/VBRotations" target="_blank">VBRotations</a><br/>
+    Flag icons from <a href="https://www.iconfinder.com/iconsets/195-flat-flag-psd-icons" target="_blank">iconfinder</a>
+    under <a href="https://creativecommons.org/licenses/by/3.0/ target=" _blank"">Creative Commons</a></p>
+</footer>
+</body>
+</html>

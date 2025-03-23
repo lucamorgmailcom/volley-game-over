@@ -82,199 +82,12 @@ class VBPositionsAndRotation extends VBTutorial {
                     pass: 'Ricezione',
                     attack: 'Attacco'
                 },
-                tutorial: [
-                    'Tutorial',
-                    'Avanti',
-                    'Questo è un giocatore.\nSi seleziona con un clic.\nS=Schiacciatore, C=Centrale,\n P=Palleggiatore, O=Opposton\nL=Libero',
-                    'Questo è in campo con tutti e\n 6 i giocatori.\nAl clic sui bottoni, i giocatori\n si muoveranno intorno al campo',
-                    'Questo ti permette di scegliere\nla formazione di partenza.\nIl clic sul cerchio cambia la rotazione.\nOgni rotazione è etichettata con la\nposizione dell\'alzatore (P)',
-                    'Questo mostra la situazione in cui\nla squadra è al servizio',
-                    'Questo mostra la situazione in cui\nla squadra è in ricezione',
-                    'Spostandosi da un cerchio ad un\nsi simulano le rotazioni come\ndurante una gara',
-                    'Da qui si selezionano le situazioni\n di gioco.\nI giocatori si muoveranno nel campo\ndi conseguenza',
-                    'Qui si hanno le posizioni dei\n giocatori quando la squadra\n è al servizio',
-                    'Qui si hanno le posizioni dei\n giocatori quando la squadra\n è in ricezione',
-                ]
             },
         }
 
         this.language = 'it'
 
         let startPosition = 1;
-        this.tutorialData = [
-            {
-                boxPosition: {
-                    left: 450 * this.svg.scale,
-                    right: 650 * this.svg.scale,
-                    top: 700 * this.svg.scale,
-                    bottom: 890 * this.svg.scale,
-                },
-                textPosition: {
-                    left: 700 * this.svg.scale,
-                    right: 1320 * this.svg.scale,
-                    top: 700 * this.svg.scale,
-                    bottom: 920 * this.svg.scale,
-                },
-                text: this.text[this.language].tutorial[startPosition],
-                nextPosition: {
-                    left: 1080 * this.svg.scale,
-                    top: 950 * this.svg.scale,
-                },
-            },
-            {
-                boxPosition: {
-                    left: 112 * this.svg.scale,
-                    right: 988 * this.svg.scale,
-                    top: 112 * this.svg.scale,
-                    bottom: 986 * this.svg.scale,
-                },
-                textPosition: {
-                    left: 1050 * this.svg.scale,
-                    right: 1670 * this.svg.scale,
-                    top: 400 * this.svg.scale,
-                    bottom: 600 * this.svg.scale,
-                },
-                text: this.text[this.language].tutorial[3],
-                nextPosition: {
-                    left: 1430 * this.svg.scale,
-                    top: 650 * this.svg.scale,
-                },
-            },
-            {
-                boxPosition: {
-                    left: 1150 * this.svg.scale,
-                    right: 1690 * this.svg.scale,
-                    top: 50 * this.svg.scale,
-                    bottom: 1070 * this.svg.scale,
-                },
-                textPosition: {
-                    left: 480 * this.svg.scale,
-                    right: 1100 * this.svg.scale,
-                    top: 50 * this.svg.scale,
-                    bottom: 270 * this.svg.scale,
-                },
-                text: this.text[this.language].tutorial[4],
-                nextPosition: {
-                    left: 860 * this.svg.scale,
-                    top: 300 * this.svg.scale,
-                },
-            },
-            {
-                boxPosition: {
-                    left: 1150 * this.svg.scale,
-                    right: 1330 * this.svg.scale,
-                    top: 50 * this.svg.scale,
-                    bottom: 1070 * this.svg.scale,
-                },
-                textPosition: {
-                    left: 480 * this.svg.scale,
-                    right: 1100 * this.svg.scale,
-                    top: 150 * this.svg.scale,
-                    bottom: 350 * this.svg.scale,
-                },
-                text: this.text[this.language].tutorial[5],
-                nextPosition: {
-                    left: 860 * this.svg.scale,
-                    top: 400 * this.svg.scale,
-                },
-            },
-            {
-                boxPosition: {
-                    left: 1330 * this.svg.scale,
-                    right: 1510 * this.svg.scale,
-                    top: 50 * this.svg.scale,
-                    bottom: 1070 * this.svg.scale,
-                },
-                textPosition: {
-                    left: 480 * this.svg.scale,
-                    right: 1100 * this.svg.scale,
-                    top: 250 * this.svg.scale,
-                    bottom: 450 * this.svg.scale,
-                },
-                text: this.text[this.language].tutorial[6],
-                nextPosition: {
-                    left: 860 * this.svg.scale,
-                    top: 500 * this.svg.scale,
-                },
-            },
-            {
-                boxPosition: {
-                    left: 1150 * this.svg.scale,
-                    right: 1510 * this.svg.scale,
-                    top: 50 * this.svg.scale,
-                    bottom: 1070 * this.svg.scale,
-                },
-                textPosition: {
-                    left: 480 * this.svg.scale,
-                    right: 1100 * this.svg.scale,
-                    top: 350 * this.svg.scale,
-                    bottom: 550 * this.svg.scale,
-                },
-                text: this.text[this.language].tutorial[7],
-                nextPosition: {
-                    left: 860 * this.svg.scale,
-                    top: 600 * this.svg.scale,
-                },
-            },
-            {
-                boxPosition: {
-                    left: 10 * this.svg.scale,
-                    right: 1110 * this.svg.scale,
-                    top: 1120 * this.svg.scale,
-                    bottom: 1570 * this.svg.scale,
-                },
-                textPosition: {
-                    left: 90 * this.svg.scale,
-                    right: 710 * this.svg.scale,
-                    top: 880 * this.svg.scale,
-                    bottom: 1080 * this.svg.scale,
-                },
-                text: this.text[this.language].tutorial[8],
-                nextPosition: {
-                    left: 760 * this.svg.scale,
-                    top: 1000 * this.svg.scale,
-                },
-            },
-            {
-                boxPosition: {
-                    left: 10 * this.svg.scale,
-                    right: 1110 * this.svg.scale,
-                    top: 1120 * this.svg.scale,
-                    bottom: 1334 * this.svg.scale,
-                },
-                textPosition: {
-                    left: 140 * this.svg.scale,
-                    right: 760 * this.svg.scale,
-                    top: 880 * this.svg.scale,
-                    bottom: 1080 * this.svg.scale,
-                },
-                text: this.text[this.language].tutorial[9],
-                nextPosition: {
-                    left: 810 * this.svg.scale,
-                    top: 1000 * this.svg.scale,
-                },
-            },
-            {
-                boxPosition: {
-                    left: 10 * this.svg.scale,
-                    right: 1110 * this.svg.scale,
-                    top: 1336 * this.svg.scale,
-                    bottom: 1570 * this.svg.scale,
-                },
-                textPosition: {
-                    left: 190 * this.svg.scale,
-                    right: 810 * this.svg.scale,
-                    top: 880 * this.svg.scale,
-                    bottom: 1080 * this.svg.scale,
-                },
-                text: this.text[this.language].tutorial[10],
-                nextPosition: {
-                    left: 860 * this.svg.scale,
-                    top: 1000 * this.svg.scale,
-                },
-            },
-        ]
-
         this.court = new VBHalfCourt({
             width: (11 / 17) * this.svg.width
         })
@@ -733,21 +546,19 @@ class VBPositionsAndRotation extends VBTutorial {
             },
         }
         this.players = {
-            s: this.court.addPlayer(this.playerPositions.servingBase[startPosition].s.x, this.playerPositions.servingBase[startPosition].s.y, this.text[this.language].players.s),
-            h1: this.court.addPlayer(this.playerPositions.servingBase[startPosition].h1.x, this.playerPositions.servingBase[startPosition].h1.y, this.text[this.language].players.h1),
-            m1: this.court.addPlayer(this.playerPositions.servingBase[startPosition].m1.x, this.playerPositions.servingBase[startPosition].m1.y, this.text[this.language].players.m1),
-            o: this.court.addPlayer(this.playerPositions.servingBase[startPosition].o.x, this.playerPositions.servingBase[startPosition].o.y, this.text[this.language].players.o),
-            h2: this.court.addPlayer(this.playerPositions.servingBase[startPosition].h2.x, this.playerPositions.servingBase[startPosition].h2.y, this.text[this.language].players.h2),
-            m2: this.court.addPlayer(this.playerPositions.servingBase[startPosition].m2.x, this.playerPositions.servingBase[startPosition].m2.y, this.text[this.language].players.m2),
-            l: this.court.addPlayer(this.playerPositions.servingBase[startPosition].l.x, this.playerPositions.servingBase[startPosition].l.y, this.text[this.language].players.l)
+            s: this.court.addPlayer(this.playerPositions.servingBase[startPosition].s.x, this.playerPositions.servingBase[startPosition].s.y, this.text[this.language].players.s, config.playersImg.s),
+            h1: this.court.addPlayer(this.playerPositions.servingBase[startPosition].h1.x, this.playerPositions.servingBase[startPosition].h1.y, this.text[this.language].players.h1, config.playersImg.h1),
+            m1: this.court.addPlayer(this.playerPositions.servingBase[startPosition].m1.x, this.playerPositions.servingBase[startPosition].m1.y, this.text[this.language].players.m1, config.playersImg.m1),
+            o: this.court.addPlayer(this.playerPositions.servingBase[startPosition].o.x, this.playerPositions.servingBase[startPosition].o.y, this.text[this.language].players.o, config.playersImg.o),
+            h2: this.court.addPlayer(this.playerPositions.servingBase[startPosition].h2.x, this.playerPositions.servingBase[startPosition].h2.y, this.text[this.language].players.h2, config.playersImg.h2),
+            m2: this.court.addPlayer(this.playerPositions.servingBase[startPosition].m2.x, this.playerPositions.servingBase[startPosition].m2.y, this.text[this.language].players.m2, config.playersImg.m2),
+            l: this.court.addPlayer(this.playerPositions.servingBase[startPosition].l.x, this.playerPositions.servingBase[startPosition].l.y, this.text[this.language].players.l, config.playersImg.l)
         }
 
         this.state = {
             moving: false,
             setterAt: startPosition
         }
-
-        this.showTutorial = typeof config.showTutorial === 'boolean' ? config.showTutorial : true
     }
 
     draw() {
@@ -758,9 +569,6 @@ class VBPositionsAndRotation extends VBTutorial {
         this.court.draw()
         this.drawRotationControl()
         this.drawActionControl()
-        if (this.showTutorial) {
-            this.drawTutorialButton()
-        }
     }
 
     multilineText(text, lineHeight, style) {
@@ -905,94 +713,42 @@ class VBPositionsAndRotation extends VBTutorial {
             this.svg.snapRoot.group(this.controlOneSrv, this.controlTwoSrv, this.controlThreeSrv, this.controlFourSrv, this.controlFiveSrv, this.controlSixSrv,
                 this.controlOneRcv, this.controlTwoRcv, this.controlThreeRcv, this.controlFourRcv, this.controlFiveRcv, this.controlSixRcv)
 
-        function getEvent(a) {
+        function buildEvent(position, serving) {
             return () => {
-                this.state.setterAt = a;
+                this.state.setterAt = position;
+
+                let playerServingReceiving;
+                let controlServingReceiving;
+                if (serving) {
+                    playerServingReceiving = this.playerPositions.servingBase;
+                    controlServingReceiving = this.controlServeBase
+                }
+                else {
+                    playerServingReceiving = this.playerPositions.receivingBase;
+                    controlServingReceiving = this.controlReceiveBase
+                }
+
+
                 if (!this.state.moving) {
-                    this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);
-                    this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
+                    this.controlSelect(this.state.setterAt, serving, controlServingReceiving);
+                    this.move(playerServingReceiving[this.state.setterAt], 600).then(() => this.state.moving = false)
                 }
             };
         }
 
-        this.controlTwoRcv.click(getEvent.call(this, 2))
-        this.controlTwoSrv.click(() => {
-            this.state.setterAt = 2;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, true, this.controlServeBase);
-                this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlOneRcv.click(() => {
-            this.state.setterAt = 1;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);
-                this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlOneSrv.click(() => {
-            this.state.setterAt = 1;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, true, this.controlServeBase);
-                this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlSixRcv.click(() => {
-            this.state.setterAt = 6;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);
-                this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlSixSrv.click(() => {
-            this.state.setterAt = 6;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, true, this.controlServeBase);
-                this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlFiveRcv.click(() => {
-            this.state.setterAt = 5;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);
-                this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlFiveSrv.click(() => {
-            this.state.setterAt = 5;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, true, this.controlServeBase);
-                this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlFourRcv.click(() => {
-            this.state.setterAt = 4;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);
-                this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlFourSrv.click(() => {
-            this.state.setterAt = 4;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, true, this.controlServeBase);
-                this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlThreeRcv.click(() => {
-            this.state.setterAt = 3;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, false, this.controlReceiveBase);
-                this.move(this.playerPositions.receivingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
-        this.controlThreeSrv.click(() => {
-            this.state.setterAt = 3;
-            if (!this.state.moving) {
-                this.controlSelect(this.state.setterAt, true, this.controlServeBase);
-                this.move(this.playerPositions.servingBase[this.state.setterAt], 600).then(() => this.state.moving = false)
-            }
-        })
+        this.controlOneRcv.click(buildEvent.call(this, 1, false))
+        this.controlOneSrv.click(buildEvent.call(this, 1, true))
+        this.controlTwoSrv.click(buildEvent.call(this, 2, true))
+        this.controlTwoRcv.click(buildEvent.call(this, 2, false))
+        this.controlSixRcv.click(buildEvent.call(this, 6, false))
+        this.controlSixSrv.click(buildEvent.call(this, 6, true))
+        this.controlFiveRcv.click(buildEvent.call(this, 5, false))
+        this.controlFiveSrv.click(buildEvent.call(this, 5, true))
+        this.controlFourRcv.click(buildEvent.call(this, 4, false))
+        this.controlFourSrv.click(buildEvent.call(this, 4, true))
+        this.controlThreeRcv.click(buildEvent.call(this, 3, false))
+        this.controlThreeSrv.click(buildEvent.call(this, 3, true))
+
         this.rotationControls = this.svg.snapRoot.group(backgroundBoxes, headingLabels, rotationLabels, joinLines, setLines, controlCircles)
 
         this.rotationControls.transform(`t${1150 * this.svg.scale}, ${50 * this.svg.scale}`)
@@ -1300,121 +1056,6 @@ class VBPositionsAndRotation extends VBTutorial {
         this.controlReceiveHit.attr({fill: this.colours.rotationControlBackgroundColourA})
         this.controlReceiveSwitch.attr({fill: this.colours.rotationControlBackgroundColourA})
         action.attr({fill: this.colours.rotationControlColour})
-    }
-
-    drawTutorialButton() {
-        const tutorialButtonBox = this.svg.snapRoot.rect(1410 * this.svg.scale, 1480 * this.svg.scale, 280 * this.svg.scale, 80 * this.svg.scale)
-        tutorialButtonBox.attr({
-            fill: this.colours.tutorialColour
-        })
-        const tutorialButtonText = this.svg.snapRoot.text(1550 * this.svg.scale, 1536 * this.svg.scale, this.text[this.language].tutorial[0])
-        tutorialButtonText.attr({
-            fill: this.colours.rotationControlColour,
-            stroke: this.colours.rotationControlColour,
-            strokeWidth: 2 * this.svg.scale,
-            'text-anchor': 'middle',
-            'font-family': 'Verdana',
-            'font-size': 44 * this.svg.scale,
-        })
-
-        this.tutorialButton = this.svg.snapRoot.group(tutorialButtonBox, tutorialButtonText)
-        this.tutorialButton.attr({cursor: 'pointer'})
-
-        this.tutorialButton.click(() => {
-            this.drawTutorial(0)
-        })
-    }
-
-    drawTutorial(index) {
-        if (index >= this.tutorialData.length) {
-            return
-        }
-
-        const p1 = this.svg.snapRoot.path("M0 0 H" + this.svg.width + "V" + this.svg.height + "H0Z " +
-            "M" + this.tutorialData[index].boxPosition.right + " " + this.tutorialData[index].boxPosition.top + " " +
-            "H" + this.tutorialData[index].boxPosition.left + "V" + this.tutorialData[index].boxPosition.bottom +
-            "H" + this.tutorialData[index].boxPosition.right + "Z")
-
-        this.tutorialMask = this.svg.snapRoot.group(p1)
-        this.tutorialMask.attr({
-            'fill-rule': 'evenodd',
-            'fill': this.colours.tutorialFade,
-            'fill-opacity': 0.8
-        })
-
-        this.tutorialMaskEdge = this.svg.snapRoot.rect(
-            this.tutorialData[index].boxPosition.left,
-            this.tutorialData[index].boxPosition.top,
-            this.tutorialData[index].boxPosition.right - this.tutorialData[index].boxPosition.left,
-            this.tutorialData[index].boxPosition.bottom - this.tutorialData[index].boxPosition.top
-        )
-        this.tutorialMaskEdge.attr({
-            stroke: this.colours.tutorialColour,
-            fill: 'none'
-        })
-
-        const textBox = this.svg.snapRoot.rect(
-            this.tutorialData[index].textPosition.left,
-            this.tutorialData[index].textPosition.top,
-            this.tutorialData[index].textPosition.right - this.tutorialData[index].textPosition.left,
-            this.tutorialData[index].textPosition.bottom - this.tutorialData[index].textPosition.top
-        )
-        textBox.attr({
-            fill: this.colours.tutorialColour
-        })
-
-        this.tutorialTextBox = this.svg.snapRoot.group(textBox)
-
-        const textChunks = this.tutorialData[index].text.split('\n')
-        for (var i = 0; i < textChunks.length; i++) {
-            const textLine = this.svg.snapRoot.text(this.tutorialData[index].textPosition.left + (10 * this.svg.scale),
-                this.tutorialData[index].textPosition.top + (42 * this.svg.scale) + (i * 40 * this.svg.scale),
-                textChunks[i])
-            textLine.attr({
-                fill: this.colours.rotationControlColour,
-                stroke: this.colours.rotationControlColour,
-                strokeWidth: 2 * this.svg.scale,
-                'text-anchor': 'left',
-                'font-family': 'Verdana',
-                'font-size': 32 * this.svg.scale,
-                cursor: 'pointer',
-            })
-            this.tutorialTextBox.add(textLine)
-        }
-
-        const nextButtonBox = this.svg.snapRoot.rect(
-            this.tutorialData[index].nextPosition.left,
-            this.tutorialData[index].nextPosition.top,
-            240 * this.svg.scale,
-            80 * this.svg.scale
-        )
-        nextButtonBox.attr({
-            fill: this.colours.tutorialColour
-        })
-        const nextButtonText = this.svg.snapRoot.text(this.tutorialData[index].nextPosition.left + 120 * this.svg.scale,
-            this.tutorialData[index].nextPosition.top + (56 * this.svg.scale),
-            this.text[this.language].tutorial[1]
-        )
-        nextButtonText.attr({
-            fill: this.colours.rotationControlColour,
-            stroke: this.colours.rotationControlColour,
-            strokeWidth: 2 * this.svg.scale,
-            'text-anchor': 'middle',
-            'font-family': 'Verdana',
-            'font-size': 44 * this.svg.scale,
-            cursor: 'pointer',
-        })
-
-        this.tutorialNextButton = this.svg.snapRoot.group(nextButtonBox, nextButtonText)
-        this.tutorialNextButton.attr({cursor: 'pointer'})
-
-        this.tutorialNextButton.click(() => {
-            this.tutorialMask.remove()
-            this.tutorialTextBox.remove()
-            this.tutorialNextButton.remove()
-            this.tutorialMaskEdge.remove()
-            this.drawTutorial(index + 1)
-        })
     }
 
     move(players, time) {

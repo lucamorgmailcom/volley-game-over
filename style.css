@@ -17,13 +17,28 @@ body {
 
 .site-header {
   background: #4596bf;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #235c79;
+  text-align: center;
+  font-size: 18px;
+}
+
+#players select  {
+  margin-right: 10px
+}
+
+#players {
+  background: #4596bf;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px;
   border-bottom-style: solid;
   border-bottom-color: #235c79;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 section.vbrotations
