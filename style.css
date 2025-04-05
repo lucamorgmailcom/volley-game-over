@@ -24,12 +24,13 @@ body {
 }
 
 .header  .image {
-  height: 120px; /* O la dimensione desiderata */
+  height: 120px;
   margin: -10px;
 }
 
 .header .text {
   font-size: 38px;
+  font-weight: bold;
 }
 
 #players select  {
