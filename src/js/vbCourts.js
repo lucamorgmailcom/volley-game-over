@@ -241,7 +241,7 @@ class Player extends CourtObject {
         this.colours = {
             playerOutlineColour: (playerConfig.colours && typeof playerConfig.colours.playerOutlineColour === 'string') ? playerConfig.colours.playerOutlineColour : '#f5f5f5',
             playerColour: (playerConfig.colours && typeof playerConfig.colours.playerColour === 'string') ? playerConfig.colours.playerColour : '#efa581',
-            playerColourHighlight: (playerConfig.colours && typeof playerConfig.colours.playerColourHighlight === 'string') ? playerConfig.colours.playerColourHighlight : '#66dd66',
+            playerColourHighlight: (playerConfig.colours && typeof playerConfig.colours.playerColourHighlight === 'string') ? playerConfig.colours.playerColourHighlight : '#f5f5f5',
         }
     }
 
