@@ -17,8 +17,7 @@ body {
 
 .site-header {
   background: #4596bf;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
   border-bottom: 1px;
   border-bottom-style: solid;
   border-bottom-color: #235c79;
@@ -52,8 +51,7 @@ section.vbrotations
 section.notes {
   background: #4596bf;
   border-top: 1px solid #235c79;
-  padding-top: 20px;
-  padding-bottom: 120px;
+  padding-bottom: 88px;
   margin-bottom: auto;
 }
 
@@ -68,8 +66,7 @@ div.container {
 footer.footer {
   background: #235c79;
   color: #4596bf;
-  padding: 15px;
-  margin-top: 60px;
+  padding: 5px;
   text-align: right;
   font-size: 18px;
   vertical-align: middle;

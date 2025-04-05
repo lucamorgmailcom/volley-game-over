@@ -50,8 +50,8 @@ class VBCourt {
         return this.svg.svgRoot
     }
 
-    addPlayer(x, y, label, img = null) {
-        const player = new Player({ x: x, y: y, label: label, img: img }, {fullCourt: this instanceof VBFullCourt}, this.svg)
+    addPlayer(x, y, label, colour, img = null) {
+        const player = new Player({ x: x, y: y, label: label, img: img, colours: {playerColour: colour} }, {fullCourt: this instanceof VBFullCourt}, this.svg)
         this.players.push(player)
         return player
     }
@@ -288,34 +288,6 @@ class Player extends CourtObject {
         return CourtObject.prototype.draw.call(this, time)
     }
 
-    // async draw (time) {
-    //   if (!this.drawn) {
-    //     this.circle = this.svg.snapRoot.circle(0, 0, 54 * this.svg.scale)
-    //
-    //     this.circle.attr({
-    //       stroke: this.colours.playerOutlineColour,
-    //       strokeWidth: 5 * this.svg.scale,
-    //       fill: this.colours.playerColour,
-    //     })
-    //
-    //     const label = this.svg.snapRoot.text(0, 0, this.label)
-    //     label.attr({
-    //       fill: this.colours.playerOutlineColour,
-    //       stroke: this.colours.playerOutlineColour,
-    //       strokeWidth: 5 * this.svg.scale,
-    //       'text-anchor':'middle',
-    //       'dominant-baseline':'central',
-    //       'font-family': 'Verdana',
-    //       'font-size': 55 * this.svg.scale,
-    //     })
-    //     this.courtObject = this.svg.snapRoot.group(this.circle, label)
-    //     this.courtObject.attr({ cursor: 'pointer' })
-    //     this.courtObject.click(() => {this.toggleHighlight()})
-    //     this.drawn = true
-    //   }
-    //   return CourtObject.prototype.draw.call(this, time)
-    // }
-    //
     toggleHighlight() {
         if (this.highlighted) {
             this.circle.attr({fill: this.colours.playerColour})

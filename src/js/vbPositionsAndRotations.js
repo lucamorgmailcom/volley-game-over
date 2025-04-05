@@ -546,13 +546,13 @@ class VBPositionsAndRotation extends VBTutorial {
             },
         }
         this.players = {
-            s: this.court.addPlayer(this.playerPositions.servingBase[startPosition].s.x, this.playerPositions.servingBase[startPosition].s.y, this.text[this.language].players.s, config.playersImg.s),
-            h1: this.court.addPlayer(this.playerPositions.servingBase[startPosition].h1.x, this.playerPositions.servingBase[startPosition].h1.y, this.text[this.language].players.h1, config.playersImg.h1),
-            m1: this.court.addPlayer(this.playerPositions.servingBase[startPosition].m1.x, this.playerPositions.servingBase[startPosition].m1.y, this.text[this.language].players.m1, config.playersImg.m1),
-            o: this.court.addPlayer(this.playerPositions.servingBase[startPosition].o.x, this.playerPositions.servingBase[startPosition].o.y, this.text[this.language].players.o, config.playersImg.o),
-            h2: this.court.addPlayer(this.playerPositions.servingBase[startPosition].h2.x, this.playerPositions.servingBase[startPosition].h2.y, this.text[this.language].players.h2, config.playersImg.h2),
-            m2: this.court.addPlayer(this.playerPositions.servingBase[startPosition].m2.x, this.playerPositions.servingBase[startPosition].m2.y, this.text[this.language].players.m2, config.playersImg.m2),
-            l: this.court.addPlayer(this.playerPositions.servingBase[startPosition].l.x, this.playerPositions.servingBase[startPosition].l.y, this.text[this.language].players.l, config.playersImg.l)
+            s: this.court.addPlayer(this.playerPositions.servingBase[startPosition].s.x, this.playerPositions.servingBase[startPosition].s.y, this.text[this.language].players.s, config.playersColour.s, config.playersImg.s),
+            h1: this.court.addPlayer(this.playerPositions.servingBase[startPosition].h1.x, this.playerPositions.servingBase[startPosition].h1.y, this.text[this.language].players.h1, config.playersColour.h1, config.playersImg.h1),
+            m1: this.court.addPlayer(this.playerPositions.servingBase[startPosition].m1.x, this.playerPositions.servingBase[startPosition].m1.y, this.text[this.language].players.m1, config.playersColour.m1, config.playersImg.m1),
+            o: this.court.addPlayer(this.playerPositions.servingBase[startPosition].o.x, this.playerPositions.servingBase[startPosition].o.y, this.text[this.language].players.o, config.playersColour.o, config.playersImg.o),
+            h2: this.court.addPlayer(this.playerPositions.servingBase[startPosition].h2.x, this.playerPositions.servingBase[startPosition].h2.y, this.text[this.language].players.h2, config.playersColour.h2, config.playersImg.h2),
+            m2: this.court.addPlayer(this.playerPositions.servingBase[startPosition].m2.x, this.playerPositions.servingBase[startPosition].m2.y, this.text[this.language].players.m2, config.playersColour.m2, config.playersImg.m2),
+            l: this.court.addPlayer(this.playerPositions.servingBase[startPosition].l.x, this.playerPositions.servingBase[startPosition].l.y, this.text[this.language].players.l, config.playersColour.l, config.playersImg.l)
         }
 
         this.state = {
@@ -722,8 +722,7 @@ class VBPositionsAndRotation extends VBTutorial {
                 if (serving) {
                     playerServingReceiving = this.playerPositions.servingBase;
                     controlServingReceiving = this.controlServeBase
-                }
-                else {
+                } else {
                     playerServingReceiving = this.playerPositions.receivingBase;
                     controlServingReceiving = this.controlReceiveBase
                 }
